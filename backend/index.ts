@@ -7,7 +7,7 @@ const { router } = require('./app/routes/router')
 const { verifyAccessToken } = require('./app/jwt_helpers/verifyAccessToken')
 require('dotenv').config()
 
-const port = process.env.PORT || 5000
+const port = 5000
 const app = new Koa()
 
 // CORS POLIDY MIDDLEWARE
@@ -41,4 +41,6 @@ app.use(async (ctx, next) => {
 // ROUTE MIDDLEWARE
 app.use(router.routes()).use(router.allowedMethods())
 
-app.listen(port, () => console.log(`Server started on port ${port}`))
+app.listen(process.env.PORT || 4000, () =>
+  console.log(`Server started on port ${port}`),
+)
