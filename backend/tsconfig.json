@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+          "module": "commonjs",
+          "target": "es2020",
+        // "target": "esnext",
+        // "module": "esnext",
+        "jsx": "preserve",
+        "strictFunctionTypes": true,
+        "strict": false,
+    },
+    "include": [
+      "**/*.ts"   /* Include every ts file in source folder */
+
+    ],
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*"
+    ]
+}
