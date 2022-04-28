@@ -17,7 +17,7 @@ app.use(
   jwtVerify({
     secret: process.env.ACCESS_TOKEN_SECRET,
   }).unless({
-    path: [process.env.LOGIN_ROUTE],
+    path: [process.env.LOGIN_ROUTE , '/'],
   }),
 )
 // JSON PRETTIER MIDDLEWARE
