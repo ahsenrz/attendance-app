@@ -27,7 +27,7 @@ app.use(bodyParser())
 
 async function index(ctx: any) {
   ctx.body = {
-    message: 'Deployed project to heroku using Github Actions CI-CD',
+    message: 'Deployed project to heroku using Github Actions CI-CD ',
   }
 }
 
