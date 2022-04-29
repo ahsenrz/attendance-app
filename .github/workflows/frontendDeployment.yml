@@ -41,7 +41,7 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: '12'
-
+      # --force flag is not necessary. Dont use it unless there's a specific reason
       - name: Installing Frontend dependencies
         run: cd frontend && npm install --force  
 
