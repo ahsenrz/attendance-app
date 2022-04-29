@@ -54,4 +54,4 @@ jobs:
 
         # Deploys to Surge
       - name: Deploy to surge
-        run: cd frontend && surge ./build web3-redux-typescript-byahsen.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: cd frontend && surge ./build attendance-app-byahsen.surge.sh --token ${{ secrets.SURGE_TOKEN }}
