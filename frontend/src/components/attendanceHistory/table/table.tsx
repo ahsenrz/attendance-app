@@ -9,6 +9,7 @@ import { DataTable } from 'primereact/datatable'
 import { Column } from 'primereact/column'
 import { InputText } from 'primereact/inputtext'
 import { Dropdown } from 'primereact/dropdown'
+import { Button } from 'primereact/button'
 import { Calendar } from 'primereact/calendar'
 import { getAttendance } from '../../../redux/Attendance/attendanceSlice'
 const { FilterMatchMode } = require('primereact/api')
@@ -17,7 +18,7 @@ const { FilterOperator } = require('primereact/api')
 const Table = () => {
   const { loading } = useAppSelector((state) => state.auth)
   const username = localStorage.getItem('user')
- 
+
   const dispatch = useAppDispatch()
 
   const [filters1, setFilters1] = useState<any>()
@@ -99,9 +100,10 @@ const Table = () => {
   const renderHeader1 = () => {
     return (
       <div className="p-d-flex p-jc-between">
-        <button
+        <Button
           type="button"
-          
+          icon="pi pi-filter-slash"
+          label="Clear"
           className="p-button-outlined"
           onClick={clearFilter1}
         />
