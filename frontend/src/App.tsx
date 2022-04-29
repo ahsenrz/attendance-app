@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {}, [email])
 
   return (
-    <BrowserRouter>
+    <BrowserRouter> 
       <div className="bgImg">
         {user || email ? <Navbar /> : null}
         <Routes>
