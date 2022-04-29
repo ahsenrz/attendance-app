@@ -1,0 +1,20 @@
+.attendenceBtn
+{ 
+    padding: 0rem;
+    outline: none !important;
+    border: none !important;
+}
+.attendenceBtn:focus
+{
+    
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+
+}
+.attendenceBtn >img:hover
+{
+     transform: translateY(-10px);
+     transition: all 0.5s  linear;
+    }
+ 

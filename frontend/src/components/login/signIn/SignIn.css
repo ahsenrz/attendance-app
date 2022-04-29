@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+.login-form {
+  background: linear-gradient(#480672, #ea48a6, #ffbb70);
+  border-radius: 50px;
+  border: 3px solid rgb(#630075, #e6218e, #f57377);
+}
+.ant-input-affix-wrapper {
+  background: linear-gradient(
+    to right,
+    rgb(99, 0, 117),
+    rgb(230, 33, 142),
+    rgb(245, 115, 119)
+  ) !important;
+
+  border-radius: 7px ;
+
+  color: #bebebe !important;
+  font-family: "Montserrat", sans-serif;
+  border: none !important;
+  height: 3rem !important;
+} 
+ 
+.ant-form-item-explain-error
+{
+  color: white !important;
+}
+.ant-input-affix-wrapper > input.ant-input {
+  background: transparent !important;
+  margin-left: 2rem !important;
+}
+
+.ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused
+{
+  box-shadow:  none !important;
+   border: 1px solid #bebebe !important;
+}
+
+ 
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #000;
+  border-color: none !important;
+}
+.login-form-forgot {
+  margin-left: 5rem;
+  color: white !important;
+   
+
+}
+
+.LoginBtn {
+  background: linear-gradient(
+    to right,
+    rgb(99, 0, 117),
+    rgb(230, 33, 142),
+    rgb(245, 115, 119)
+  ) !important;
+
+  width: 100%;
+  color: #bebebe !important;
+  border-radius: 10px ;
+
+  height: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ant-input[value]
+{
+    color: white !important;
+}
+
+
+
+.LoginBtn:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
+   transform: translateY(-1px);
+   transition: all 0.5s linear;
+
+}
+.LoginBtn:focus
+{
+  box-shadow: none !important;
+}
+.ant-checkbox-wrapper {
+  color: white !important;
+}
+.form {
+  padding: 3rem;
+}
+.anticon {
+  color: #bebebe !important;
+  font-size: 1.5rem !important;
+}
+
+.camera {
+  color: white !important;
+}
+@media (min-width: 320px) {
+  .login-form {
+    margin-top: 5rem !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .login-form {
+    margin-top: 0rem !important;
+  }
+}

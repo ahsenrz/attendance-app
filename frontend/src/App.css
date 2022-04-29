@@ -1,0 +1,49 @@
+.bgImg {
+  background: url(./assets/images/bg-image.png) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh !important;
+}
+
+@media (min-width: 320px) {
+  .bgImg {
+    height: 320vh !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .bgImg {
+    height: 330vh !important;
+  }
+}
+
+@media (min-width: 375px) {
+  .bgImg {
+    height: 280vh !important;
+  }
+}
+@media (min-width: 411px) {
+  .bgImg {
+    height: 240vh !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .bgImg {
+    height: 135vh !important;
+  }
+}
+@media (min-width: 1024px) {
+  
+  body {
+    overflow: hidden;
+  }
+}
+@media (min-width: 1024px) {
+  .bgImg {
+    height: 120vh !important;
+  }
+}

@@ -1,0 +1,11 @@
+
+.quotes_container {
+    margin-top: 4rem !important;
+    text-align: center;
+}
+.quotes_container > p{
+    color: white;
+    font-size: 1.3rem;
+    padding: 0rem 1rem;
+}
+
