@@ -43,7 +43,7 @@ jobs:
           node-version: '12'
 
       - name: Installing Frontend dependencies
-        run: cd frontend && yarn install
+        run: cd frontend && npm install --force  
 
       - name: Build Application
         run: cd frontend && CI='' npm run build
