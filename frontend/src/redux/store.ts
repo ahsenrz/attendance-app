@@ -7,7 +7,7 @@ const store = configureStore({
   reducer: parentReducer,
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({
     serializableCheck: false
-  })
+  }) 
 });
 
 setupListeners(store.dispatch);
