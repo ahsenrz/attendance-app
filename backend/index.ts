@@ -38,6 +38,6 @@ app.use(async (ctx, next) => {
 // ROUTE MIDDLEWARE
 app.use(router.routes()).use(router.allowedMethods())
 
-app.listen(process.env.PORT || 4000, () =>
+app.listen(process.env.PORT || port, () =>
   console.log(`Server started on port ${port}`),
 )
