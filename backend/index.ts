@@ -25,12 +25,9 @@ app.use(json())
 // BODY PARSER MIDDLEWARE
 app.use(bodyParser())
 
-async function index(ctx: any) {
-  ctx.body = {
-    message: 'Deployed project to heroku using Github Actions CI-CD ',
-  }
-}
-
+app.use(ctx => {
+  ctx.body = 'Hello World';
+});
 //for cors
 app.use(async (ctx, next) => {
   ctx.set('Access-Control-Allow-Origin', '*')
